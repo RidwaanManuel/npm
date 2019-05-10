@@ -9,3 +9,7 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+exports.printMsg = function() {
+  console.log("This is a message from the demo package");
+}
